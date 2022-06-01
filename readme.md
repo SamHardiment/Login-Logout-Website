@@ -1,6 +1,6 @@
 # Welcome to my Login-logout App
 
-## Installation
+## Installation and Usage
 
 1. Clone or fork the repo and cd into it
 2. Run the start.sh script `bash _scripts/start.sh` to launch the server
@@ -8,13 +8,18 @@
 
 The port for the api is 3000
 
+- To stop the server and remove containers use the stop.sh script `bash _scripts/stop.sh`
+- To completely remove containers/images/volumes and do a clean up use the teardown.sh script `bash _scripts/teardown.sh`
+
 ### Dependencies
 
-###### DevDependencies
+There is a description for what each dependency is for below but the DevDepenencies are only required for development purposes.
+
+##### DevDependencies
 
 - nodemon
 
-###### Dependencies
+##### Dependencies
 
 - cors
 - express
