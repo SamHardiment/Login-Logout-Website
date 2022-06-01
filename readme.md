@@ -15,6 +15,14 @@ The port for the api is 3000
 
 There is a description for what each dependency is for below but the DevDepenencies are only required for development purposes.
 
+Cors: Cross-origin resource sharing (CORS) allows AJAX requests to skip the Same-origin policy and access resources from remote hosts. We use it as a middlware and enable cors by using the line `app.use(cors());`.
+
+If you make a request to your app, you will notice a header being returned:
+
+- `Access-Control-Allow-Origin: *`
+
+The Access-Control-Allow-Origin header determines which origins are allowed to access server resources over CORS (the \* wildcard allows access from any origin).
+
 ##### DevDependencies
 
 - nodemon
