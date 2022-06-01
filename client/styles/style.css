@@ -22,6 +22,7 @@ html {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   justify-content: center;
+  width: 250px;
 }
 
 .login-card {
@@ -64,4 +65,16 @@ html {
   border: solid 1px rgb(56, 210, 71);
   color: rgb(56, 210, 71);
   transition: all 0.3s;
+}
+
+#registerForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+.input-box {
+}
+
+.label {
+  font-size: 12px;
 }

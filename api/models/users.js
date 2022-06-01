@@ -18,4 +18,19 @@ module.exports = class User {
       }
     });
   }
+
+  static create(username, email, password) {
+    return new Promise(async (res, rej) => {
+      try {
+        let result = await db.query(
+          "INSERET INTO users (username, email, password_digest) VALUES ($1, $2, $3) RETURNING *;",
+          [username, email, password]
+        );
+        let user = new User(result.rows[0]);
+        res(user);
+      } catch (err) {
+        rej(`Something went wrong: ${err}`);
+      }
+    });
+  }
 };
