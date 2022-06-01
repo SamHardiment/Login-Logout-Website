@@ -17,12 +17,12 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 30px;
-  height: 200px;
+  height: 300px;
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   justify-content: center;
-  width: 250px;
+  width: 350px;
 }
 
 .login-card {
@@ -39,14 +39,14 @@ html {
   padding: 5px;
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 36px;
 }
 
 .title-description {
   text-align: center;
   font-weight: 400;
   color: rgba(42, 40, 40, 0.891);
-  font-weight: 18px;
+  font-weight: 26px;
 }
 
 .button-containers {
@@ -73,8 +73,17 @@ html {
   row-gap: 3px;
 }
 .input-box {
+  padding: 3px;
+  text-indent: 3px;
+  margin-left: 4px;
+  margin-bottom: 10px;
 }
 
 .label {
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.submit-button {
+  width: 50%;
+  align-self: center;
 }
