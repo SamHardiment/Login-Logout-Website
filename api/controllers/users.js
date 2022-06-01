@@ -1,11 +1,12 @@
-const express = require("express");
-const router = express.Router();
+const User = require("../models/users");
 
-const User = require("../models/user");
+async function index(req, res) {
+  try {
+    const users = await User.all;
+    res.status(200).json(users);
+  } catch (err) {
+    res.status(404).json(err);
+  }
+}
 
-router.get("/", async (req, res) => {
-  const users = await User.all;
-  res.json(users);
-});
-
-module.exports = router;
+module.exports = { index };
